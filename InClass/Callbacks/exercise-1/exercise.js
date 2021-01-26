@@ -11,3 +11,17 @@ Update your code to make the colour change every 5 seconds to something differen
 Prefer to work on a codepen? https://codepen.io/makanti/pen/abOreLg
 ================
 */
+
+// function create generate colour
+
+function generateRandomColor() {
+    var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    return randomColor;
+    //random color will be freshly served
+}
+//  set interval time functions
+setInterval(function backGroundChange() {
+
+    document.body.style.backgroundColor = generateRandomColor();
+
+}, 1000);
